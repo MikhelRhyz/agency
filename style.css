@@ -1,0 +1,99 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.flex-wrap {
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+img.tile-image {
+  width: 100%;
+}
+.main {
+  flex: 1;
+  padding: 3rem 1rem;
+}
+
+  .left,
+.right {
+  border: none;
+  background: #faf9f6;
+}
+
+.title {
+  max-width: 745px;
+  margin-bottom: 3rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7rem;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 26px;
+}
+
+.logo-container {
+  margin-bottom: 3rem;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+.content {
+  padding: 1rem 2rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+@media screen and (max-width: 1024px) {
+  .left .row,
+  .right .row {
+    flex-direction: column;
+  }
+
+  img.tile-image {
+    max-width: 302px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body{
+    margin: 25px 25px 0 25px;
+  }
+
+  .main{
+    padding: 0 1rem;
+  }
+
+  img.logo{
+    width: 30%;
+  }
+
+  div.title{
+    text-align: center;
+  }
+
+  .title h1{
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .row.flex-wrap{
+    flex-direction: column;
+  }
+}
